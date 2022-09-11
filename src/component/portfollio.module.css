@@ -1,0 +1,72 @@
+.navbar{
+      padding: 10px 50px 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo{
+      width: 70px;
+      height: 50px;
+      border-radius: 50%;
+}
+.menu{
+      display: flex;
+      gap: 20px;
+}
+.menuItem{
+      font-weight: bold;
+}
+.menuItem :hover{
+      cursor: pointer;
+}
+.portfollio{
+      width: 80%;
+      margin: auto;
+      margin-top: 200px;
+      display: flex;
+      justify-content: space-between;
+}
+.name{
+      margin: 10px;
+      font-size: 50px;
+}
+span{
+      color: rgb(52, 52, 255);
+}
+.resumeBtn{
+      background-color: rgb(52, 52, 255);
+      padding: 10px;
+      color: white;
+      border: none;
+      font-weight: 500;
+      font-size: 20px;
+      border-radius: 10px;
+      width: 150px;
+      margin-top: 40px;
+      cursor: pointer;
+}
+.socialMedia{
+      display: flex;
+      margin-top: 200px;
+      gap: 20px;
+      font-size: 25px;
+}
+.socialLogo{
+      cursor: pointer;
+      color: black;
+}
+.socialLogo :hover{
+      color: aqua;
+}
+.mainPortfollio{
+      display: flex;
+}
+.profilePicture{
+      margin-top: 100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+}
+.menuBar{
+      display: none;
+}     
