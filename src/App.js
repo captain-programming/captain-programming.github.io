@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './component/Navbar';
-import Portfollio from './component/Portfollio';
+import AllRouters from './Pages/AllRouters';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Portfollio />
+    <div className='App'>
+      <AllRouters />
+    </div>
     </>
   );
 }
