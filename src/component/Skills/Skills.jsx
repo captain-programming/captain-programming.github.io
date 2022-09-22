@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <>
     <Box mb={20}>
-    <Heading color={'blue.500'} mb={14} textAlign='center'><u>Skills</u></Heading>
+    <Heading color={'blue.500'} mb={14} pt={10} textAlign='center'><u>Skills</u></Heading>
     <Flex className='SkillList'>
       <Flex className='SkillListAll'>
         <Heading fontSize={'22px'} mb={3}>Front-end Skills</Heading> 

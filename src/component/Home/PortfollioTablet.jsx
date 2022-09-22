@@ -4,6 +4,20 @@ import Pic from "../../resources/img.jpg";
 import { Flex, Heading, Button, Img, Link } from '@chakra-ui/react';
 
 const PortfollioTablet = () => {
+
+  const resumeButton = () =>{
+    fetch('resume.pdf').then(res =>{
+      res.blob().then(blob => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'resume.pdf';
+        alink.click();
+      })
+    })
+  }
+
   return (
     <>
     <Flex direction={'column'} gap={4}>
@@ -11,7 +25,7 @@ const PortfollioTablet = () => {
       <Heading>I'am <span style={{color: "blue"}}>Dinesh</span></Heading>
       <Heading>MERN Stack Developer</Heading>
       <Button colorScheme={'blue'} width="140px" mt={6} 
-      onClick={()=> window.open("https://drive.google.com/file/d/1FS-AYR0uBiDlbuN3sJbmoZG-d2i1f_lg/view?usp=sharing", "_black")}
+      onClick={resumeButton}
       >Download CV</Button>
       
     </Flex>

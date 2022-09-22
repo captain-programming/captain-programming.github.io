@@ -7,20 +7,24 @@ import PortfollioTablet from '../component/Home/PortfollioTablet';
 import Projects from '../component/Projects/Projects';
 import Skills from '../component/Skills/Skills';
 import Contact from '../component/Contact/Contact';
+import Statistics from '../component/statistics/Statistics';
 
 const Home = () => {
   return (
     <>
       <Box className='container'>
-      <Box className='PortfollioLaptop'  pt={40}><PortfollioLaptop /></Box>
-      <Box className='PortfollioMobile'  p={10}><PortfollioMobile /></Box>
-      <Box className='PortfollioTablet'  p={10}><PortfollioTablet /></Box>
+      <Box className='PortfollioLaptop' id='#home' pt={40}><PortfollioLaptop /></Box>
+      <Box className='PortfollioMobile' id='#home' p={10}><PortfollioMobile /></Box>
+      <Box className='PortfollioTablet' id='#home' p={10}><PortfollioTablet /></Box>
       </Box>
       <Box>
-      <Box><About/></Box>
-      <Box><Skills /></Box>
-      <Box width={"80%"} margin="auto" mt={40}><Projects /></Box>
-      <Contact />
+      <Box id='#about'><About/></Box>
+      <Box id='#skills'><Skills /></Box>
+      <Box width={"80%"} margin="auto" mt={40} id="projects"><Projects /></Box>
+      <Box id='statistics'>
+        <Statistics />
+      </Box>
+      <Box id='contact'><Contact /></Box>
       </Box>
     </>  )
 }

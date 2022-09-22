@@ -1,10 +1,21 @@
 import React from 'react';
 import Logo from "../../resources/dk-logo.jpg";
-import { Flex, IconButton, Img, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
+import { Flex, IconButton, Img, Menu, MenuButton, MenuList } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
 
 const NavbarMobile = () => {
+  const [showNavList, setShowNavList] = useState(false);
+
+  const toggleNavList = (id) => {
+    var element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+    setShowNavList(!showNavList);
+  };
+
   return (
     <>
     <Flex justifyContent={'space-between'} p={3} width={'85%'} margin="auto" alignItems={'center'} className='Navbar'>
@@ -16,11 +27,14 @@ const NavbarMobile = () => {
             variant='outline'
             />
             <MenuList>
-                  <MenuItem>Home</MenuItem>
-                  <MenuItem>About me</MenuItem>
-                  <MenuItem>Skills</MenuItem>
-                  <MenuItem>Projects</MenuItem>
-                  <MenuItem>Contacts</MenuItem>
+            <Flex gap={2} p={2} pl={4} direction="column">
+              <a href='#home' onClick={() =>  toggleNavList("#home")}>Home</a>
+              <a href='#about' onClick={() =>  toggleNavList("#about")}>About me</a>
+              <a href='#skills' onClick={() =>  toggleNavList("#skills")}>Skills</a>
+              <a href='#projects' onClick={() =>  toggleNavList("#projects")}>Projects</a>
+              <a href='#statistics' onClick={() =>  toggleNavList("#statistics")}>Statistics</a>
+              <a href='#contact' onClick={() =>  toggleNavList("#contact")}>Contact</a>
+            </Flex>
             </MenuList>
         
       </Menu>

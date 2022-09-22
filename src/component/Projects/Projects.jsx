@@ -69,7 +69,7 @@ const projectArr=[
 const Projects = () => {
   return (
     <>
-      <Heading color={'blue.500'} mb={14} textAlign='center'><u>Projects</u></Heading>
+      <Heading color={'blue.500'} mb={14} pt={10} textAlign='center'><u>Projects</u></Heading>
       <Box className='Projects'>
         {projectArr.map((p)=> (
           <ProjectDetails data={p}/>
