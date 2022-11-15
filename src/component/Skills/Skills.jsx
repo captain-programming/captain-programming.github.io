@@ -19,7 +19,7 @@ const Skills = () => {
           <Heading size={'sm'}>HTML5</Heading>
         </Flex>  
 
-        <Flex shadow={'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px'} p={3} aalignItems='center' gap={6} borderRadius={10}>
+        <Flex shadow={'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px'} p={3} alignItems='center' gap={6} borderRadius={10}>
           <TbBrandCss3 fontSize="30px" color='rgb(46,75,210)'/>
           <Heading size={'sm'}>CSS3</Heading>
         </Flex>  

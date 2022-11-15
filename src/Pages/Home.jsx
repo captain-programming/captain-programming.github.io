@@ -12,7 +12,9 @@ import Statistics from '../component/statistics/Statistics';
 const Home = () => {
   return (
     <>
-      <Box className='container'>
+    <Box bg={'gray.100'}>
+      
+      <Box className='container' >
       <Box className='PortfollioLaptop' id='#home' pt={40}><PortfollioLaptop /></Box>
       <Box className='PortfollioMobile' id='#home' p={10}><PortfollioMobile /></Box>
       <Box className='PortfollioTablet' id='#home' p={10}><PortfollioTablet /></Box>
@@ -26,6 +28,7 @@ const Home = () => {
       </Box>
       <Box id='contact'><Contact /></Box>
       </Box>
+    </Box>
     </>  )
 }
 

@@ -33,21 +33,27 @@ const ProjectDetails = ({data}) => {
       <Flex justifyContent={"space-between"} alignItems="center">
         <AiFillCaretLeft onClick={prevSlide} className='LeftRightLogo'/>
         <Box width={"90%"}>
-        <Img src={img[slide]} alt="IMG" borderRadius={10} />
+        <Flex justifyContent={'center'} alignItems='center'>
+        <Img src={img[slide]} alt="IMG" borderRadius={10} height='300px'/>
+        </Flex>
         </Box>
         <AiFillCaretRight onClick={nextSlide} className='LeftRightLogo'/>
       </Flex>
-      <Text>{description}</Text>
-      <Flex gap={2}>
+      <Text fontSize={['16px', '20px']}>{description}</Text>
+      <Flex gap={2} fontSize={['16px', '20px']}>
         <b>Tech Stack:</b>
         {techStack}
       </Flex>
       <Flex justifyContent={'space-around'}>
         <Button>
-		<Flex gap={2} alignItems="center" onClick={()=> window.open(codeLink)}><SiGithub />Code</Flex>
+		<Flex gap={2} alignItems="center" onClick={()=> window.open(codeLink)}><SiGithub />
+      <Text fontSize={['16px', '20px']}>Code</Text>
+    </Flex>
 	  </Button>
         <Button>
-		<Flex gap={2} alignItems="center" onClick={()=> window.open(liveLink)}><RiShareBoxLine />Live</Flex>
+		<Flex gap={2} alignItems="center" onClick={()=> window.open(liveLink)}><RiShareBoxLine />
+      <Text fontSize={['16px', '20px']}>Live</Text>
+    </Flex>
 	  </Button>
       </Flex>
     </Flex>

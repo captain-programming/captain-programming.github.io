@@ -1,21 +1,24 @@
 import React from 'react';
 import {GrLinkedinOption, GrGithub, GrTwitter} from "react-icons/gr";
-import Pic from "../../resources/img.jpg";
+import Pic from "../../resources/img.png";
 import { Flex, Heading, Button, Img, Link } from '@chakra-ui/react';
 
 const PortfollioTablet = () => {
+  const resumeLink = 'https://drive.google.com/file/d/1FS-AYR0uBiDlbuN3sJbmoZG-d2i1f_lg/view?usp=sharing';
 
   const resumeButton = () =>{
-    fetch('resume.pdf').then(res =>{
+    fetch('Dinesh-Karde-Resume.pdf').then(res =>{
       res.blob().then(blob => {
         const fileURL = window.URL.createObjectURL(blob);
 
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'resume.pdf';
+        alink.download = 'Dinesh-Karde-Resume.pdf';
         alink.click();
       })
     })
+
+    window.open(resumeLink, '_blank');
   }
 
   return (

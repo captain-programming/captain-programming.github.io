@@ -1,6 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import Githubcalendar from "react-github-calendar";
+
 export const Github = () => {
   const colourTheme = {
     background: "transparent",
@@ -22,7 +23,7 @@ export const Github = () => {
           blockSize={15}
           blockMargin={5}
           theme={colourTheme}
-          fontSize={16}
+          width="100%"
         />
       </Box>
     </>

@@ -5,19 +5,12 @@
 
 .PortfollioMobile{
       display: none;
-      margin-top: 60px;
 }
 .PortfollioTablet{
       display: none;
       margin-top: 60px;
 }
-.NavbarLaptop{
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.NavbarMobile{
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      display: none;
-}
+
 .ProfileImg{
       width: 450px;
       height: 450px;
@@ -34,7 +27,7 @@
 .AboutText{
       flex-direction:column;
       gap: 20px;
-      width:51%;
+      width:60%;
       margin: auto; 
 }
 .SkillList{
@@ -66,12 +59,6 @@
       }
 
       .PortfollioMobile{
-            display: block;
-      }
-      .NavbarLaptop{
-            display: none;
-      }
-      .NavbarMobile{
             display: block;
       }
       .AboutContact{

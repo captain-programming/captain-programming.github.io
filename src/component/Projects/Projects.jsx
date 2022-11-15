@@ -25,6 +25,11 @@ import chargebee5 from "../../resources/chargebee/chargebee-5.png";
 import chargebee6 from "../../resources/chargebee/chargebee-6.png";
 import chargebee7 from "../../resources/chargebee/chargebee-7.png";
 import chargebee8 from "../../resources/chargebee/chargebee-8.png";
+import olx1 from "../../resources/olx/olx-1.png";
+import olx2 from "../../resources/olx/olx-2.png";
+import olx3 from "../../resources/olx/olx-3.png";
+import olx4 from "../../resources/olx/olx-4.png";
+import olx5 from "../../resources/olx/olx-5.png";
 
 
 const projectArr=[
@@ -62,7 +67,7 @@ const projectArr=[
     techStack: "CSS | HTML | JavaScript | React",
     codeLink: "https://github.com/captain-programming/rabid-fire-6527",
     liveLink: "#",
-    img: []
+    img: [olx1, olx2, olx3, olx4, olx5]
   },
 ]
 
@@ -71,8 +76,8 @@ const Projects = () => {
     <>
       <Heading color={'blue.500'} mb={14} pt={10} textAlign='center'><u>Projects</u></Heading>
       <Box className='Projects'>
-        {projectArr.map((p)=> (
-          <ProjectDetails data={p}/>
+        {projectArr.map((p, i)=> (
+          <ProjectDetails data={p} key={i}/>
         ))}
     </Box>
     </>

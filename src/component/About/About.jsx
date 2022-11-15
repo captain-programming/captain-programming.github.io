@@ -8,10 +8,10 @@ const About = () => {
     <Box textAlign={'center'} p={"200px 10px"}>
     <Heading color={'blue.500'} mb={14}><u>About me</u></Heading>
     <Flex className='AboutText'>
-      <Heading fontSize="25px">I'am Dinesh Karde</Heading>
-      <Text fontSize="20px">Quick learner, web developer with the ability to write clean, reusable, optimised code and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.</Text>
+      <Heading fontSize={["25px", "30px"]}>I'am Dinesh Karde</Heading>
+      <Text fontSize={["20px", "25px"]} textAlign='justify'>Quick learner, web developer with the ability to write clean, reusable, optimised code and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.</Text>
     </Flex>
-    <Flex className='AboutContact'>
+    <Flex className='AboutContact' fontSize={['16px', '20px']}>
       <Link href='https://goo.gl/maps/ViVkyGA3zvJWHmvLA' target={"_blank"}>
         <Flex alignItems='center' gap={2}><MdLocationOn /> Ahmednagar, Maharashtra</Flex>
       </Link>
