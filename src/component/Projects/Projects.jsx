@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectDetails from './ProjectDetails';  import { Box, Heading } from '@chakra-ui/react';
+import ProjectDetails from './ProjectDetails';  
+import { Box, Heading } from '@chakra-ui/react';
 import sephora1 from "../../resources/sephora/sephora-1.png";
 import sephora2 from "../../resources/sephora/sephora-2.png";
 import sephora3 from "../../resources/sephora/sephora-3.png";
