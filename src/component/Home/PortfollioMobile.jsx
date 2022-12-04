@@ -1,7 +1,8 @@
 import React from 'react';
 import {GrLinkedinOption, GrGithub, GrTwitter} from "react-icons/gr";
 import Pic from "../../resources/img.png";
-import { Flex, Heading, Button, Img, Link } from '@chakra-ui/react';
+import { Flex, Heading, Button, Img, Link, Text, Image } from '@chakra-ui/react';
+import Typed from 'react-typed';
 
 const PortfollioMobile = () => {
   const resumeLink = 'https://drive.google.com/file/d/1FS-AYR0uBiDlbuN3sJbmoZG-d2i1f_lg/view?usp=sharing';
@@ -22,17 +23,23 @@ const PortfollioMobile = () => {
 
   return (
     <>
-    <Flex direction={'column'} gap={4}>
+    <Flex direction={'column'} gap={4} mt={16}>
       <Heading>Hi 👋,</Heading>
-      <Heading>I'am <span style={{color: "blue"}}>Dinesh</span></Heading>
-      <Heading>MERN Stack Developer</Heading>
+      <Heading>I'am <span style={{color: "rgb(49,130,206)"}}>Dinesh</span></Heading>
+      <Text fontSize={['xl', '2xl', '3xl', '4xl']} fontWeight="bold">I'm a <span style={{ color: "rgb(49,130,206)" }}> <Typed
+            strings={['Full Stack Web Developer', "MERN Stack Developer"]}
+            typeSpeed={80} loop
+            backSpeed={80}
+        />
+        </span> 
+      </Text>
       <Button colorScheme={'blue'} width="140px" mt={6} 
       onClick={resumeButton}
       >Resume</Button>
       
     </Flex>
-    <Flex direction={'column'} alignItems='flex-end' justifyContent={'center'}>
-      <Img src={Pic} alt='' width={60} height={60} borderRadius="50%" mt={24}/>
+    <Flex direction={'column'} alignItems='center' justifyContent={'center'}>
+    <Image src={Pic} w={["250px", "340px"]} borderRadius="20%"  h={["250px", "340px"]} mt={16}/>
     </Flex>
     <Flex gap={4} mt={20}>
             <Link href='https://www.linkedin.com/in/dinesh-karde/'_hover={{"color": "#00ffff"}} target={"_blank"}><GrLinkedinOption fontSize={26} /></Link>

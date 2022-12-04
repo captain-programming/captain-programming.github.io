@@ -5,7 +5,7 @@ import {MdLocationOn, MdEmail,MdPhone} from 'react-icons/md'
 const About = () => {
   return (
     <>
-    <Box textAlign={'center'} p={"200px 10px"}>
+    <Box textAlign={'center'} p={["100px 10px", "200px 10px"]}>
     <Heading color={'blue.500'} mb={14}><u>About me</u></Heading>
     <Flex className='AboutText'>
       <Heading fontSize={["25px", "30px"]}>I'am Dinesh Karde</Heading>
