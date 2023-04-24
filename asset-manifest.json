@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.045d2ffb.css",
-    "main.js": "/static/js/main.8e4a74fa.js",
+    "main.js": "/static/js/main.da7954e9.js",
     "static/js/787.454ec878.chunk.js": "/static/js/787.454ec878.chunk.js",
     "static/media/beautiva1.png": "/static/media/beautiva1.6523f34cc5049ea4e44f.png",
     "static/media/cricinfo-6.png": "/static/media/cricinfo-6.033b48935f23977689db.png",
@@ -57,11 +57,11 @@
     "static/media/beautiva10.png": "/static/media/beautiva10.860815fa8c6b7b89f3c7.png",
     "index.html": "/index.html",
     "main.045d2ffb.css.map": "/static/css/main.045d2ffb.css.map",
-    "main.8e4a74fa.js.map": "/static/js/main.8e4a74fa.js.map",
+    "main.da7954e9.js.map": "/static/js/main.da7954e9.js.map",
     "787.454ec878.chunk.js.map": "/static/js/787.454ec878.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.045d2ffb.css",
-    "static/js/main.8e4a74fa.js"
+    "static/js/main.da7954e9.js"
   ]
 }
