@@ -28,8 +28,8 @@ const ProjectDetails = ({data}) => {
   // console.log(slide, img.length);
   return (
     <>
-    <Flex shadow={'rgba(0, 0, 0, 0.35) 0px 5px 15px'} p={4} borderRadius={10} direction='column' gap={4}>
-      <Heading size={'sm'} textAlign='center'>{title}</Heading>
+    <Flex shadow={'rgba(0, 0, 0, 0.35) 0px 5px 15px'} p={4} borderRadius={10} direction='column' gap={4} class="project-card">
+      <Heading size={'sm'} textAlign='center' class="project-title">{title}</Heading>
       <Flex justifyContent={"space-between"} alignItems="center">
         <AiFillCaretLeft onClick={prevSlide} className='LeftRightLogo'/>
         <Box width={"90%"}>
@@ -39,20 +39,20 @@ const ProjectDetails = ({data}) => {
         </Box>
         <AiFillCaretRight onClick={nextSlide} className='LeftRightLogo'/>
       </Flex>
-      <Text fontSize={['16px', '20px']}>{description}</Text>
+      <Text fontSize={['16px', '20px']} class="project-description">{description}</Text>
       <Flex gap={2} fontSize={['16px', '20px']}>
-        <b>Tech Stack:</b>
+        <b class="project-tech-stack">Tech Stack:</b>
         {techStack}
       </Flex>
       <Flex justifyContent={'space-around'}>
         <Button>
 		<Flex gap={2} alignItems="center" onClick={()=> window.open(codeLink)}><SiGithub />
-      <Text fontSize={['16px', '20px']}>Code</Text>
+      <Text fontSize={['16px', '20px']} class="project-github-link">Code</Text>
     </Flex>
 	  </Button>
         <Button>
 		<Flex gap={2} alignItems="center" onClick={()=> window.open(liveLink)}><RiShareBoxLine />
-      <Text fontSize={['16px', '20px']}>Live</Text>
+      <Text fontSize={['16px', '20px']} class="project-deployed-link">Live</Text>
     </Flex>
 	  </Button>
       </Flex>

@@ -1,6 +1,6 @@
-import React from 'react';
-import ProjectDetails from './ProjectDetails';  
-import { Box, Heading } from '@chakra-ui/react';
+import React from "react";
+import ProjectDetails from "./ProjectDetails";
+import { Box, Heading } from "@chakra-ui/react";
 import sephora1 from "../../resources/sephora/sephora-1.png";
 import sephora2 from "../../resources/sephora/sephora-2.png";
 import sephora3 from "../../resources/sephora/sephora-3.png";
@@ -54,74 +54,133 @@ import beautiva11 from "../../resources/beautiva/beautiva11.png";
 import beautiva12 from "../../resources/beautiva/beautiva12.png";
 import beautiva13 from "../../resources/beautiva/beautiva13.png";
 
-
-const projectArr=[
+const projectArr = [
   {
-    title: "Sephora Clone", 
-    description: "Sephora is a beauty product brand and we made a clone of its online retail platform.",
+    title: "Sephora Clone",
+    description:
+      "Sephora is a beauty product brand and we made a clone of its online retail platform.",
     team: "A collaborative project built by a team of 5, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript",
     codeLink: "https://github.com/Suraj-Badwaik/Sephora-clone",
     liveLink: "https://sephora-clone-website.netlify.app/",
-    img: [sephora1, sephora2, sephora3, sephora4, sephora5, sephora6, sephora7, sephora8, sephora9, sephora10]
+    img: [
+      sephora1,
+      sephora2,
+      sephora3,
+      sephora4,
+      sephora5,
+      sephora6,
+      sephora7,
+      sephora8,
+      sephora9,
+      sephora10,
+    ],
   },
   {
-    title: "Cricinfo Clone", 
-    description: "Cricinfo is the best cricket news website and we made a clone of its online cricket news platform.",
+    title: "Cricinfo Clone",
+    description:
+      "Cricinfo is the best cricket news website and we made a clone of its online cricket news platform.",
     team: "A collaborative project built by a team of 5, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript",
     codeLink: "https://github.com/vivek13420/CricInfo-Clone",
     liveLink: "https://cerulean-starlight-aac220.netlify.app/",
-    img: [cricinfo1, cricinfo2, cricinfo3, cricinfo4, cricinfo5, cricinfo6, cricinfo7]
+    img: [
+      cricinfo1,
+      cricinfo2,
+      cricinfo3,
+      cricinfo4,
+      cricinfo5,
+      cricinfo6,
+      cricinfo7,
+    ],
   },
   {
-    title: "Chargebee Clone", 
-    description: "Chargebee is the subscription billing and revenue management platform and we made a clone of its online subscription platform.",
+    title: "Chargebee Clone",
+    description:
+      "Chargebee is the subscription billing and revenue management platform and we made a clone of its online subscription platform.",
     team: "An individual project built by a me, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript | React",
     codeLink: "https://github.com/captain-programming/max-alarm-4534",
     liveLink: "https://chargebee-dk-clone.netlify.app/",
-    img: [chargebee1, chargebee2, chargebee3, chargebee4, chargebee5, chargebee6, chargebee7, chargebee8]
+    img: [
+      chargebee1,
+      chargebee2,
+      chargebee3,
+      chargebee4,
+      chargebee5,
+      chargebee6,
+      chargebee7,
+      chargebee8,
+    ],
   },
   {
-    title: "OLX Clone", 
-    description: "OLX is an electronics and automobile product brand and we made a clone of its online retail platform.",
+    title: "OLX Clone",
+    description:
+      "OLX is an electronics and automobile product brand and we made a clone of its online retail platform.",
     team: "An individual project built by a me, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript | React",
     codeLink: "https://github.com/captain-programming/rabid-fire-6527",
     liveLink: "https://olxclonewebsite.netlify.app/",
-    img: [olx1, olx2, olx3, olx4, olx5]
+    img: [olx1, olx2, olx3, olx4, olx5],
   },
   {
-    title: "My Hours Clone", 
-    description: "My Hours are organizing projects, tracking time, and reporting your work.",
+    title: "My Hours Clone",
+    description:
+      "My Hours are organizing projects, tracking time, and reporting your work.",
     team: "A collaborative project built by a team of 5, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript | React | Node.js | MongoDB",
     codeLink: "https://github.com/Surya9263/hideous-crack-5602",
     liveLink: "https://myhour.vercel.app//",
-    img: [myhours1, myhours2, myhours3, myhours4, myhours5, myhours6, myhours7, myhours8, myhours9]
+    img: [
+      myhours1,
+      myhours2,
+      myhours3,
+      myhours4,
+      myhours5,
+      myhours6,
+      myhours7,
+      myhours8,
+      myhours9,
+    ],
   },
   {
-    title: "Beautiva", 
-    description: "Beautiva is an Ecommerce web application that deals with selling lifestyle-related products. Design inspiration is taken from Nykaa.",
+    title: "Beautiva",
+    description:
+      "Beautiva is an Ecommerce web application that deals with selling lifestyle-related products. Design inspiration is taken from Nykaa.",
     team: "A collaborative project built by a team of 5, executed in 5 days.",
     techStack: "CSS | HTML | JavaScript | React | Node.js | MongoDB",
     codeLink: "https://github.com/sanj1997/wasteful-dock-5798",
     liveLink: "https://beautiva-ecom.netlify.app/",
-    img: [beautiva1, beautiva2, beautiva3, beautiva4, beautiva5, beautiva6, beautiva7, beautiva8, beautiva9, beautiva10, beautiva11, beautiva12, beautiva13]
+    img: [
+      beautiva1,
+      beautiva2,
+      beautiva3,
+      beautiva4,
+      beautiva5,
+      beautiva6,
+      beautiva7,
+      beautiva8,
+      beautiva9,
+      beautiva10,
+      beautiva11,
+      beautiva12,
+      beautiva13,
+    ],
   },
-]
+];
 
 const Projects = () => {
   return (
-    <>
-      <Heading color={'blue.500'} mb={14} pt={24} textAlign='center'><u>Projects</u></Heading>
-      <Box className='Projects'>
-        {projectArr.map((p, i)=> (
-          <ProjectDetails data={p} key={i}/>
+    <Box id="projects">
+      <Heading color={"blue.500"} mb={14} pt={24} textAlign="center">
+        <u>Projects</u>
+      </Heading>
+      <Box className="Projects">
+        {projectArr.map((p, i) => (
+          <ProjectDetails data={p} key={i} />
         ))}
+      </Box>
     </Box>
-    </>
-  )
-}
+  );
+};
 export default Projects;

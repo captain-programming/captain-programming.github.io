@@ -5,11 +5,11 @@ const GithubStatus = () => {
 	return (
 		<>
 		<Flex direction='column' gap={10} fontSize='15px'>
-			<Img src='https://github-readme-streak-stats.herokuapp.com/?user=captain-programming&' />
+			<Img id="github-streak-stats" src='https://github-readme-streak-stats.herokuapp.com/?user=captain-programming&' />
 
-			<Img src='https://github-readme-stats.vercel.app/api?username=captain-programming&show_icons=true&locale=en' />
+			<Img id="github-stats-card" src='https://github-readme-stats.vercel.app/api?username=captain-programming&show_icons=true&locale=en' />
 
-			<Img src='https://github-readme-stats.vercel.app/api/top-langs?username=captain-programming&show_icons=true&locale=en&layout=compact' />
+			<Img id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs?username=captain-programming&show_icons=true&locale=en&layout=compact' />
 		</Flex>
 		</>
 	)

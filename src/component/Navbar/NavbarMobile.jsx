@@ -34,7 +34,7 @@ const NavbarMobile = () => {
 
   return (
     <>
-    <Flex justifyContent={'space-between'} p={3} width={'100%'} margin="auto" alignItems={'center'} position={'fixed'} bg='gray.300' boxShadow={'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}>
+    <Flex id="nav-menu" justifyContent={'space-between'} p={3} width={'100%'} margin="auto" alignItems={'center'} position={'fixed'} bg='gray.300' boxShadow={'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}>
       <NavLink to="/"><Img src={Logo} alt='' width={20} borderRadius={10}/></NavLink>
       <Menu>
             <MenuButton 
@@ -50,7 +50,7 @@ const NavbarMobile = () => {
               <a href='#projects' onClick={() =>  toggleNavList("#projects")}>Projects</a>
               <a href='#statistics' onClick={() =>  toggleNavList("#statistics")}>Statistics</a>
               <a href='#contact' onClick={() =>  toggleNavList("#contact")}>Contact</a>
-              <a href='#resume' onClick={resumeButton}>Resume</a>
+              <a href='#resume' onClick={resumeButton} id="resume-link-1">Resume</a>
             </Flex>
             </MenuList>
         

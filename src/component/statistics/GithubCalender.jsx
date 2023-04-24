@@ -19,6 +19,7 @@ export const Github = () => {
           Days I <span style={{"color": "rgb(41,121,180)"}}> Code</span>
         </Heading>
         <Githubcalendar
+          class="react-activity-calendar"
           username="captain-programming"
           blockSize={15}
           blockMargin={5}
